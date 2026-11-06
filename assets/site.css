@@ -26,7 +26,7 @@ button, a, select, summary { -webkit-tap-highlight-color: transparent; }
 .site-header { border-bottom: 1px solid var(--line); background: var(--surface); }
 .header-inner { max-width: 1160px; margin: auto; padding: 22px 28px; display: flex; align-items: center; gap: 30px; }
 .brand { color: var(--text); display: inline-flex; align-items: center; gap: 12px; flex-shrink: 0; text-decoration: none; font-size: 19px; font-weight: 750; letter-spacing: -.5px; line-height: 1.3; }
-.brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px; background: var(--accent); color: #fff; font-size: 30px; font-weight: 700; font-style: italic; }
+.brand-mark { display: block; width: 42px; height: 42px; border-radius: 10px; object-fit: contain; flex-shrink: 0; }
 .brand small { display: block; font-size: 10px; font-weight: 500; letter-spacing: .1em; color: var(--muted); margin-top: 3px; }
 .site-nav { display: flex; align-items: center; gap: 22px; margin-left: auto; }
 .site-nav a { color: var(--muted); font-size: 13px; font-weight: 600; text-decoration: none; white-space: nowrap; padding: 8px 0; }
@@ -121,7 +121,7 @@ h1 { font-size: clamp(28px, 4vw, 43px); line-height: 1.25; letter-spacing: -.035
 }
 @media (prefers-color-scheme: dark) {
   :root { --bg: #17141d; --surface: #211c29; --text: #f0eaf6; --muted: #b0a6be; --line: #37303f; --accent: #c7a4f5; --tint: #30243e; --shadow: none; }
-  .brand-mark, .button.primary { background: #8c61c5; color: #fff; }
+  .button.primary { background: #8c61c5; color: #fff; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print {
