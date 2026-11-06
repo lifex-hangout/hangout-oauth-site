@@ -7,7 +7,7 @@
 - Extracted shared translations and metadata into `assets/content.js`. `node scripts/build-seo.cjs` regenerates localized shells from the five root HTML pages, plus `sitemap.xml` and `robots.txt`. Generated outputs are deterministic and committed for GitHub Pages root publication. Homepages skip Markdown/sanitizer libraries. New browser scripts use v4 filenames while the original scripts are preserved for cached v3 HTML.
 - Homepage copy is static HTML in all five languages. Policy/FAQ bodies and translated support content still load live from the app's original sources; no policy text is copied into generated pages. Each no-JavaScript source link uses its correct locale.
 - Validation: 19 language regression tests; static checks over all 30 HTML files and 25 sitemap entries (canonicals, reciprocal alternates, descriptions, social cards, schemas, local links and document source links); generator repeatability; browser checks of route switching, legacy URLs, saved preferences, document rendering, account-deletion anchors/other query parameters and five mobile homepages.
-- Search Console property ownership and sitemap submission need to be checked by an authorized property owner; no account access or submission has been completed. Search indexing is a separate external process.
+- On 2026-11-06 the sitemap was submitted through the existing verified parent domain property. Search Console confirmed successful processing and 25 discovered pages. Individual page indexing and search appearance are a separate external process and have not yet been confirmed.
 
 
 ## 2026-11-06: Homepage and language preferences
