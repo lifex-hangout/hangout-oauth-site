@@ -30,3 +30,11 @@ Self-hosted dependencies in assets/vendor avoid third-party script CDN dependenc
 - DOMPurify 3.4.17, Apache-2.0 or MPL-2.0 — dompurify.LICENSE and dompurify.LICENSE-MPL
 
 GitHub Pages publishes the root of main. Keep CNAME set to hangout-support.beesk.it. The organization root Pages site and lifex-hangout/static are separate sites and keep their existing configuration.
+
+## Language preferences
+
+The entire homepage and the shared navigation support all five languages. Language selection stays on the current page and preserves its query parameters and section anchor. Selection order is a valid `?lang=` value, the browser's saved `hangout.language` preference, then the browser's preferred supported language (English fallback). Explicit URL and selector choices are saved in localStorage; blocked storage falls back safely to URL/browser selection. Every internal navigation link includes the selected language, including English and homepage links.
+
+`assets/language.js` resolves the language before the deferred page script. The homepage uses the Hangout app's original onboarding illustration and links to the existing App Store and Google Play listings. Policy and FAQ documents continue to use their shared source above.
+
+Run language regression checks with `node --test tests/language.test.cjs` and JavaScript syntax checks with `node --check assets/language.js` / `node --check assets/site.js`. See [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) for the current validation record.

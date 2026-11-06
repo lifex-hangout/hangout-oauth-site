@@ -8,16 +8,17 @@
   <meta name="theme-color" content="#7650ae">
   <link rel="icon" type="image/png" href="assets/app-icon.png?v=2">
   <link rel="apple-touch-icon" href="assets/app-icon.png?v=2">
-  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/language.js?v=3"></script>
+  <link rel="stylesheet" href="assets/site.css?v=3">
   <script defer src="assets/vendor/marked.umd.js"></script>
   <script defer src="assets/vendor/purify.min.js"></script>
-  <script defer src="assets/site.js"></script>
+  <script defer src="assets/site.js?v=3"></script>
 </head>
 <body data-page="support">
 <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 <header class="site-header" id="top"><div class="header-inner">
-  <a class="brand" href="/" aria-label="Hangout homepage"><img class="brand-mark" src="assets/app-icon.png?v=2" width="42" height="42" alt=""><span>Hangout<small>DATE &amp; FIND FRIENDS</small></span></a>
-  <nav class="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html" data-page-link="home" aria-label="Hangout homepage"><img class="brand-mark" src="assets/app-icon.png?v=2" width="42" height="42" alt=""><span>Hangout<small>DATE &amp; FIND FRIENDS</small></span></a>
+  <nav class="site-nav" aria-label="Main navigation" data-i18n-aria="navigation">
     <a href="support.html" data-page-link="support" data-i18n="support">Support</a>
     <a href="privacy.html" data-page-link="privacy" data-i18n="privacy">Privacy Policy</a>
     <a href="terms.html" data-page-link="terms" data-i18n="terms">Terms of Service</a>
@@ -30,13 +31,13 @@
   </label>
 </div></header>
 <main id="main" class="page support-page">
-<div class="intro"><p class="eyebrow">HANGOUT HELP CENTER</p><h1 data-i18n="supportTitle">How can we help?</h1><p class="subtitle" data-i18n="supportIntro">Find answers, get in touch, and feel at home on Hangout.</p></div>
+<div class="intro"><p class="eyebrow" data-i18n="helpEyebrow">HANGOUT HELP CENTER</p><h1 data-i18n="supportTitle">How can we help?</h1><p class="subtitle" data-i18n="supportIntro">Find answers, get in touch, and feel at home on Hangout.</p></div>
 <p id="support-status" role="status" aria-live="polite" hidden></p>
 <div id="support-sections" class="support-sections" lang="en-US">
 <section>
     <h2>About Hangout</h2>
     <p>Hangout - Date &amp; Find Friends is a mobile app for meeting people, dating, and making friends. Members create a profile, connect with other people, and can report or block users. If you choose Google Sign-In, Hangout uses it to authenticate your account.</p>
-    <p><a href="/">Visit the Hangout homepage</a> to learn more about the app and how it handles your information.</p>
+    <p><a href="index.html" data-page-link="home">Visit the Hangout homepage</a> to learn more about the app and how it handles your information.</p>
   </section>
 <section>
     <h2>Need Help?</h2>

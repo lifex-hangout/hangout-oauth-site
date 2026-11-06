@@ -10,15 +10,71 @@
   });
   const LOCALES = {
     "en-US": {
+      homeEyebrow: "A LITTLE HELLO. A NEW CONNECTION.",
+      homeTitle: "Good company.",
+      homeTitleAccent: "Closer than you think.",
+      homeIntro: "A coffee, a meal, or a conversation that goes somewhere. Meet people nearby and find your next connection on Hangout.",
+      downloadOn: "Download on the",
+      getOn: "Get it on",
+      alreadyMember: "Already on Hangout? Find help here →",
+      artCaption: "LET’S HANGOUT",
+      artNote: "It starts with hello.",
+      howEyebrow: "MAKE THE FIRST MOVE",
+      howTitle: "From a profile to a real connection.",
+      stepOneTitle: "Find someone nearby",
+      stepOneBody: "Explore profiles and get to know people through their introduction and voice.",
+      stepTwoTitle: "Send a Hangout",
+      stepTwoBody: "Suggest a coffee, a meal, or a drink. Or write an invitation of your own.",
+      stepThreeTitle: "Let the conversation begin",
+      stepThreeBody: "When you both say yes, a chat opens so you can get to know each other.",
+      helpEyebrow: "HANGOUT HELP CENTER",
+      helpTitle: "Here when you need us.",
+      helpIntro: "Answers about your account, your privacy, and using the app — all in one place.",
+      contactSupport: "Contact support →",
+      faqDescription: "Accounts, features, and common questions",
+      accountDescription: "How to request deletion of your account",
+      privacyDescription: "How your personal information is handled",
+      termsDescription: "What to know when using Hangout",
+      navigation: "Main navigation",
+      homeLabel: "Hangout homepage",
+
       name: "English", language: "Language", support: "Support", privacy: "Privacy Policy", terms: "Terms of Service", faq: "FAQ",
       legal: "Policies & help", contents: "On this page", source: "View Markdown source", top: "Back to top", skip: "Skip to content",
       intro: "Information about your privacy, your account, and using Hangout.",
-      supportTitle: "How can we help?", supportIntro: "Find answers, get in touch, and feel at home on Hangout.",
+      supportTitle: "How can we help?", supportIntro: "Find answers about your account and the app, or contact us for help.",
       loading: "Loading the latest document…", error: "We couldn't load this document. Please check your connection and try again.",
       supportError: "We couldn't load support in this language. The English information is available below.",
       retry: "Try again", table: "Document table — scroll horizontally to see all columns", account: "Account Deletion",
     },
     "ko-KR": {
+      homeEyebrow: "가벼운 인사에서 시작되는 새로운 만남",
+      homeTitle: "함께할 사람,",
+      homeTitleAccent: "생각보다 가까이에.",
+      homeIntro: "커피 한 잔, 맛있는 식사, 조금 더 나누고 싶은 대화. 행아웃에서 가까운 사람을 만나고 새로운 인연을 시작해 보세요.",
+      downloadOn: "지금 다운로드",
+      getOn: "지금 다운로드",
+      alreadyMember: "이미 행아웃을 이용 중인가요? 도움말 보기 →",
+      artCaption: "우리, 행아웃 할까요?",
+      artNote: "시작은 가벼운 인사로.",
+      howEyebrow: "먼저 인사를 건네 보세요",
+      howTitle: "프로필 너머, 서로를 알아가는 시간.",
+      stepOneTitle: "가까운 사람을 찾아보세요",
+      stepOneBody: "프로필을 둘러보고 자기소개와 목소리로 상대를 조금 더 알아보세요.",
+      stepTwoTitle: "행아웃을 보내세요",
+      stepTwoBody: "커피, 식사, 술 한 잔을 제안해 보세요. 나만의 메시지로 마음을 전할 수도 있어요.",
+      stepThreeTitle: "대화를 시작하세요",
+      stepThreeBody: "서로의 제안을 수락하면 채팅방이 열려요. 대화를 나누며 천천히 알아가세요.",
+      helpEyebrow: "행아웃 고객지원",
+      helpTitle: "도움이 필요할 때, 여기서.",
+      helpIntro: "계정부터 개인정보, 앱 이용까지. 궁금한 내용을 확인하고 해결되지 않는 문제는 문의해 주세요.",
+      contactSupport: "고객지원에 문의하기 →",
+      faqDescription: "계정과 앱 이용에 관한 궁금증",
+      accountDescription: "계정 삭제를 요청하는 방법",
+      privacyDescription: "개인정보 수집·이용·보관 안내",
+      termsDescription: "행아웃을 이용할 때 알아둘 내용",
+      navigation: "주 메뉴",
+      homeLabel: "행아웃 홈",
+
       name: "한국어", language: "언어", support: "고객지원", privacy: "개인정보처리방침", terms: "이용약관", faq: "자주 묻는 질문",
       legal: "정책 및 도움말", contents: "이 페이지의 목차", source: "Markdown 원문 보기", top: "맨 위로", skip: "본문으로 바로가기",
       intro: "개인정보와 계정, Hangout 이용에 관한 안내입니다.",
@@ -28,6 +84,34 @@
       retry: "다시 시도", table: "문서 표 — 옆으로 스크롤하면 모든 열을 볼 수 있습니다", account: "계정 삭제",
     },
     "ja-JP": {
+      homeEyebrow: "小さなあいさつから、新しい出会いへ",
+      homeTitle: "気の合う誰かは、",
+      homeTitleAccent: "思ったより近くに。",
+      homeIntro: "一杯のコーヒー、おいしい食事、もっと話したくなる会話。Hangout で近くの人と出会い、新しいつながりを見つけましょう。",
+      downloadOn: "ダウンロード",
+      getOn: "ダウンロード",
+      alreadyMember: "すでにご利用中ですか？ヘルプはこちら →",
+      artCaption: "一緒に HANGOUT",
+      artNote: "まずは、こんにちは。",
+      howEyebrow: "あなたから声をかけてみませんか",
+      howTitle: "プロフィールから始まる、新しいつながり。",
+      stepOneTitle: "近くの人を見つける",
+      stepOneBody: "プロフィールを見て、自己紹介や声から相手のことを知ってみましょう。",
+      stepTwoTitle: "Hangout を送る",
+      stepTwoBody: "コーヒーや食事、お酒に誘ってみましょう。自分の言葉でメッセージを送ることもできます。",
+      stepThreeTitle: "会話を始める",
+      stepThreeBody: "お互いの誘いを受け入れるとチャットが開きます。会話を通じて、少しずつ知り合いましょう。",
+      helpEyebrow: "HANGOUT サポート",
+      helpTitle: "困ったときは、こちらへ。",
+      helpIntro: "アカウント、プライバシー、アプリの使い方。気になることをご確認いただけます。",
+      contactSupport: "サポートに問い合わせる →",
+      faqDescription: "アカウントや使い方についての疑問",
+      accountDescription: "アカウントの削除を申請する方法",
+      privacyDescription: "個人情報の取り扱いについて",
+      termsDescription: "Hangout を利用する際のルール",
+      navigation: "メインナビゲーション",
+      homeLabel: "Hangout ホーム",
+
       name: "日本語", language: "言語", support: "サポート", privacy: "プライバシーポリシー", terms: "利用規約", faq: "よくある質問",
       legal: "ポリシーとヘルプ", contents: "このページの目次", source: "Markdown 原文を表示", top: "ページの先頭へ", skip: "本文へ移動",
       intro: "プライバシー、アカウント、Hangout のご利用についてのご案内です。",
@@ -37,6 +121,34 @@
       retry: "再試行", table: "文書の表 — 横にスクロールしてすべての列を表示", account: "アカウントの削除",
     },
     "zh-CN": {
+      homeEyebrow: "一句问候，开启新的相遇",
+      homeTitle: "聊得来的人，",
+      homeTitleAccent: "也许就在附近。",
+      homeIntro: "一杯咖啡、一顿美食，或一段意犹未尽的对话。在 Hangout 认识附近的人，开启新的缘分。",
+      downloadOn: "下载于",
+      getOn: "下载于",
+      alreadyMember: "已经在使用 Hangout？查看帮助 →",
+      artCaption: "一起 HANGOUT 吧",
+      artNote: "从一句你好开始。",
+      howEyebrow: "试着先打个招呼",
+      howTitle: "从个人资料开始，慢慢了解彼此。",
+      stepOneTitle: "认识附近的人",
+      stepOneBody: "浏览个人资料，通过自我介绍和声音多了解对方一点。",
+      stepTwoTitle: "发送 Hangout 邀请",
+      stepTwoBody: "约一杯咖啡、一起吃饭或小酌一杯，也可以写下你自己的邀请。",
+      stepThreeTitle: "开始聊天",
+      stepThreeBody: "当双方都接受邀请后，聊天室就会开启。通过对话慢慢了解彼此。",
+      helpEyebrow: "HANGOUT 帮助中心",
+      helpTitle: "需要帮助时，我们在这里。",
+      helpIntro: "账户、隐私和应用使用方面的疑问，都可以从这里找到解答。",
+      contactSupport: "联系客户支持 →",
+      faqDescription: "账户、功能与常见疑问",
+      accountDescription: "如何申请删除账户",
+      privacyDescription: "个人信息的处理方式",
+      termsDescription: "使用 Hangout 时需要了解的规则",
+      navigation: "主导航",
+      homeLabel: "Hangout 首页",
+
       name: "简体中文", language: "语言", support: "客户支持", privacy: "隐私政策", terms: "服务条款", faq: "常见问题",
       legal: "政策与帮助", contents: "本页目录", source: "查看 Markdown 原文", top: "返回顶部", skip: "跳至正文",
       intro: "了解您的隐私、账户以及 Hangout 的使用方式。",
@@ -46,6 +158,34 @@
       retry: "重试", table: "文档表格 — 横向滚动以查看所有列", account: "删除账户",
     },
     "zh-TW": {
+      homeEyebrow: "一句問候，開啟新的相遇",
+      homeTitle: "聊得來的人，",
+      homeTitleAccent: "也許就在附近。",
+      homeIntro: "一杯咖啡、一頓美食，或一段意猶未盡的對話。在 Hangout 認識附近的人，開啟新的緣分。",
+      downloadOn: "下載於",
+      getOn: "下載於",
+      alreadyMember: "已經在使用 Hangout？查看說明 →",
+      artCaption: "一起 HANGOUT 吧",
+      artNote: "從一句你好開始。",
+      howEyebrow: "試著先打個招呼",
+      howTitle: "從個人檔案開始，慢慢了解彼此。",
+      stepOneTitle: "認識附近的人",
+      stepOneBody: "瀏覽個人檔案，透過自我介紹和聲音多了解對方一點。",
+      stepTwoTitle: "傳送 Hangout 邀請",
+      stepTwoBody: "約一杯咖啡、一起吃飯或小酌一杯，也可以寫下你自己的邀請。",
+      stepThreeTitle: "開始聊天",
+      stepThreeBody: "當雙方都接受邀請後，聊天室就會開啟。透過對話慢慢了解彼此。",
+      helpEyebrow: "HANGOUT 支援中心",
+      helpTitle: "需要協助時，我們在這裡。",
+      helpIntro: "帳戶、隱私和 App 使用方面的疑問，都可以從這裡找到解答。",
+      contactSupport: "聯絡客戶支援 →",
+      faqDescription: "帳戶、功能與常見疑問",
+      accountDescription: "如何申請刪除帳戶",
+      privacyDescription: "個人資料的處理方式",
+      termsDescription: "使用 Hangout 時需要了解的規則",
+      navigation: "主導覽",
+      homeLabel: "Hangout 首頁",
+
       name: "繁體中文", language: "語言", support: "客戶支援", privacy: "隱私權政策", terms: "服務條款", faq: "常見問題",
       legal: "政策與說明", contents: "本頁目錄", source: "檢視 Markdown 原文", top: "回到頂端", skip: "跳至主要內容",
       intro: "了解您的隱私、帳戶，以及 Hangout 的使用方式。",
@@ -56,11 +196,10 @@
     },
   };
 
-  const params = new URLSearchParams(location.search);
-  const language = Object.hasOwn(LOCALES, params.get("lang")) ? params.get("lang") : "en-US";
+  const { language, save: saveLanguage } = window.HangoutLanguage;
   const text = LOCALES[language];
   const page = document.body.dataset.page;
-  const pageUrl = (kind, locale = language) => `${kind}.html${locale === "en-US" ? "" : `?lang=${encodeURIComponent(locale)}`}`;
+  const pageUrl = (kind, locale = language) => `${kind === "home" ? "index" : kind}.html?lang=${encodeURIComponent(locale)}`;
 
   function localizeShell() {
     document.documentElement.lang = language;
@@ -68,14 +207,24 @@
       if (text[node.dataset.i18n]) node.textContent = text[node.dataset.i18n];
     });
     document.querySelectorAll("[data-page-link]").forEach((link) => {
-      link.href = pageUrl(link.dataset.pageLink);
+      const hash = new URL(link.href).hash;
+      link.href = pageUrl(link.dataset.pageLink) + hash;
       if (link.dataset.pageLink === page) link.setAttribute("aria-current", "page");
     });
+    document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+      node.setAttribute("aria-label", text[node.dataset.i18nAria]);
+    });
+    document.querySelector(".brand").setAttribute("aria-label", text.homeLabel);
+    const description = document.querySelector('meta[name="description"]');
+    if (page === "home") description.content = text.homeIntro;
     const select = document.querySelector("#language");
     select.value = language;
     select.setAttribute("aria-label", text.language);
     select.addEventListener("change", () => {
-      location.href = pageUrl(page === "home" ? "support" : page, select.value);
+      saveLanguage(select.value);
+      const url = new URL(location.href);
+      url.searchParams.set("lang", select.value);
+      location.assign(url.href);
     });
     if (page !== "home") document.title = `${text[page]} | Hangout - Date & Find Friends`;
   }

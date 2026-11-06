@@ -1,0 +1,9 @@
+# Project context
+
+## 2026-11-06: Homepage and language preferences
+
+- Rebuilt the homepage around the actual app flow: discover profiles nearby, send a coffee/meal/drink or custom invitation, and start chatting after mutual acceptance. It includes the app's original onboarding illustration, App Store / Google Play links, and direct links to FAQ, account deletion instructions, privacy, terms, and support. All homepage copy supports English, Korean, Japanese, Simplified Chinese, and Traditional Chinese.
+- Previously only the navigation was translated, no preference was stored, and changing language on the homepage navigated to support. `assets/language.js` now resolves a valid URL language before saved preference before browser preference, handles unavailable storage, and distinguishes Traditional Chinese browser locales. Explicit selections persist under `hangout.language` in localStorage. Switching language retains the pathname, other query parameters, and hash. Internal navigation retains language, including English and the brand's home link.
+- Document bodies still load from the same Markdown source as the mobile app. Support translations still load from the shared HTML source. No policy copies or policy wording were changed.
+- Validation: JavaScript syntax checks; 17 language preference regression tests; browser checks of all five homepage languages at 320px and 390px mobile widths; privacy rendering and table scrolling; English override; homepage return visit without language query; support account deletion anchors retained when changing language. Responsive layouts use natural wrapping for Japanese and Chinese, including narrow phones.
+- Hosting remains GitHub Pages on the root of `main`, with the existing CNAME and URLs. CSS and page scripts use `?v=3` to refresh previous cached assets. No framework, build step, or hosting migration was introduced.
