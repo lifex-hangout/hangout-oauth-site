@@ -212,3 +212,8 @@ html:lang(zh) .home-page :is(h1, h2, h3, p) { word-break: normal; }
   .brand small { font-size: 8px; }
   .language-select { padding: 8px 6px; max-width: 105px; }
 }
+.language-links { max-width: 1048px; margin: -14px auto 32px; display: flex; flex-wrap: wrap; gap: 10px; color: var(--muted); font-size: 12px; }
+.language-links a { color: var(--muted); text-decoration: none; }
+.language-links a:hover, .language-links a[aria-current="true"] { color: var(--accent); text-decoration: underline; }
+@media (max-width: 1104px) { .language-links { margin-left: 28px; margin-right: 28px; } }
+@media (max-width: 520px) { .language-links { margin-left: 20px; margin-right: 20px; } }

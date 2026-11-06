@@ -2,18 +2,20 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { readFileSync } = require('node:fs');
 const { runInNewContext } = require('node:vm');
-const source = readFileSync(new URL('../assets/language.js', `file://${__filename}`), 'utf8');
+const content = readFileSync(new URL('../assets/content.js', `file://${__filename}`), 'utf8');
+const source = readFileSync(new URL('../assets/language-v4.js', `file://${__filename}`), 'utf8');
 
-function boot({ search = '', saved = null, languages = ['en-US'], blocked = false } = {}) {
+function boot({ search = '', saved = null, languages = ['en-US'], pathname = '/', blocked = false } = {}) {
   const storage = new Map(saved === null ? [] : [['hangout.language', saved]]);
   const context = {
-    URLSearchParams, location: { search }, navigator: { languages },
+    URLSearchParams, location: { search, pathname }, navigator: { languages },
     document: { documentElement: {} }, window: {},
     localStorage: {
       getItem(key) { if (blocked) throw Error('Storage blocked'); return storage.get(key); },
       setItem(key, value) { if (blocked) throw Error('Storage blocked'); storage.set(key, value); },
     },
   };
+  runInNewContext(content, context);
   runInNewContext(source, context);
   return { ...context.window.HangoutLanguage, html: context.document.documentElement, storage };
 }
@@ -66,4 +68,18 @@ test('invalid language selections do not overwrite a preference', () => {
   const result = boot({ saved: 'ko-KR' });
   result.save('unsupported');
   assert.equal(result.storage.get('hangout.language'), 'ko-KR');
+});
+
+
+test('a fixed language route overrides saved and browser preferences', () => {
+  const result = boot({ pathname: '/ja/privacy.html', saved: 'ko-KR', languages: ['zh-TW'] });
+  assert.equal(result.language, 'ja-JP');
+  assert.equal(result.storage.get('hangout.language'), 'ja-JP');
+});
+
+test('legacy query links override a route and resolve to a stable canonical URL', () => {
+  const result = boot({ pathname: '/ko/', search: '?lang=en-US', saved: 'ja-JP' });
+  assert.equal(result.language, 'en-US');
+  assert.equal(result.pageUrl('home'), '/en/');
+  assert.equal(result.pageUrl('privacy', 'zh-TW'), '/zh-tw/privacy.html');
 });
